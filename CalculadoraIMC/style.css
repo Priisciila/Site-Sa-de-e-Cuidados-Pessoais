@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6a1b9a;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #4a0072;
+}
+
+.hero {
+    background-color: #8e24aa;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imc-section {
+    background-color: #e1bee7;
+}
+
+.imc-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.imc-section input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.imc-section button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imc-section button:hover {
+    background-color: #4a0072;
+}
+
+#resultado {
+    margin-top: 20px; 
+    font-size: 18px;
+    color: #6a1b9a;
+    text-align: center; 
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Esconder o menu por padrão */
+    }
+
+    .mobile-menu.open {
+        display: flex; /* Exibir o menu quando ativo */
+        flex-direction: column;
+        position: absolute;
+        background-color: #6a1b9a;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobile-menu li {
+        margin: 10px 0;
+    }
+
+    .mobile-menu a {
+        color: white;
+        padding: 10px;
+        display: block;
+    }
+}
+
+
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; 
+    bottom: 0; 
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px; 
+}
+.content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+h2 {
+    margin-bottom: 20px; 
+}
+
+.section-image {
+    width: 30%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-right: 20px; 
+}
+
+.text {
+    width: 65%; 
+}
+
+
